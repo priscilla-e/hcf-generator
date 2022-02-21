@@ -2,8 +2,9 @@
 # Using Euclid's Algorithm
 # By: Priscilla Emasoga
 
-
 def gen(max, min)
+  puts "Generating hcf(#{max},#{min})..."
+  puts
   q = nil
   r = nil
   possible_hcfs = []
@@ -17,6 +18,7 @@ def gen(max, min)
     min = r
   end
   hcfIndex = possible_hcfs.length - 1
+  puts
   puts "The hcf is: = #{possible_hcfs[hcfIndex]}"
 end
 

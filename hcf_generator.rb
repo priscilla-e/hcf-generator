@@ -3,14 +3,14 @@
 # By: Priscilla Emasoga
 
 def gen(max, min)
-  puts "Generating hcf(#{max},#{min})..."
-  puts
+  puts "================================="
+  puts "Find hcf(#{max},#{min})"
+  puts "================================="
   q = nil
   r = nil
   possible_hcfs = []
   while r != 0
-    compute = max / min
-    q = compute.floor()
+    q = (max / min).floor()
     r = max - (min * q)
     puts "#{max} = #{q} x #{min} + #{r}"
     possible_hcfs << min
@@ -19,8 +19,9 @@ def gen(max, min)
   end
   hcfIndex = possible_hcfs.length - 1
   puts
-  puts "The hcf is: = #{possible_hcfs[hcfIndex]}"
+  puts "The hcf is: #{possible_hcfs[hcfIndex]}"
+  puts "================================="
 end
 
 
-gen(123456789, 456456)
+gen(123456789, 465465)

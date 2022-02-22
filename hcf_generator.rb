@@ -17,9 +17,9 @@ def gen(max, min)
     max = min
     min = r
   end
-  hcfIndex = possible_hcfs.length - 1
+  hcf_index = possible_hcfs.length - 1
   puts
-  puts "The hcf is: #{possible_hcfs[hcfIndex]}"
+  puts "The hcf is: #{possible_hcfs[hcf_index]}"
   puts "================================="
 end
 
